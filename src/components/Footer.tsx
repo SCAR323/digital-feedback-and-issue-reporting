@@ -1,5 +1,6 @@
 import React from 'react';
 import { Train, Phone, Mail, MapPin, Globe, Facebook, Twitter, Instagram } from 'lucide-react';
+import favicon from '/public/favicon.png';
 
 interface FooterProps {
   language: 'en' | 'hi';
@@ -37,9 +38,11 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg">
-                <Train className="h-8 w-8 text-white" />
+              {/* <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg"> */}
+              <div className="text-blue-800 w-10 h-10 mr-2">             
+                <img src={favicon} alt='icon'/>
               </div>
+              {/* </div> */}
               <div>
                 <h3 className="text-xl font-bold">{text.title[language]}</h3>
               </div>
