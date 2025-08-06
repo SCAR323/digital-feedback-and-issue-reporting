@@ -41,7 +41,7 @@ const ReportForm: React.FC<ReportFormProps> = ({ onSubmit, language }) => {
       en: "Report an Issue or Share Feedback",
       hi: "समस्या रिपोर्ट करें या फीडबैक साझा करें",
     },
-    type: { en: "Report Type", hi: "रिपोर्ट प्रकार" },
+    type: { en: "Report Type", hi: "रिपोर्ट प्रकार"    },
     category: { en: "Category", hi: "श्रेणी" },
     priority: { en: "Priority Level", hi: "प्राथमिकता स्तर" },
     title_field: { en: "Issue Title", hi: "समस्या शीर्षक" },

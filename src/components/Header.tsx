@@ -1,5 +1,6 @@
 import React from 'react';
 import { Train, Menu, Globe } from 'lucide-react';
+import favicon from '/public/favicon.png';
 
 interface HeaderProps {
   activeTab: 'home' | 'report' | 'dashboard';
@@ -21,9 +22,12 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, language, setL
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg">
-              <Train className="h-8 w-8 text-white" />
-            </div>
+            {/* <div className="bg-gradient-to-r from-blue-600 to-orange-500 p-2 rounded-lg"> */}
+              {/* <Train className="h-8 w-8 text-white" /> */}
+              <div className="text-blue-800 w-12 h-12 mr-2">             
+                <img src={favicon} alt='icon'/>
+              </div>
+            {/* </div> */}
             <div>
               <h1 className="text-xl font-bold text-gray-900">
                 {text.title[language]}
